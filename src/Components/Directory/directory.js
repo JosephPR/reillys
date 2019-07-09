@@ -13,7 +13,7 @@ export default class Directory extends Component {
           title: 'Funny',
           imageUrl: 'http://static1.squarespace.com/static/58d9aba3893fc01b3a3e1310/595288fe4c8b036ff814ba34/5af0700f8a922ddd8dd60e89/1553140731386/NEW-Stickers-Squarespace_Artboard+25.jpg',
           id: 1,
-          linkUrl: 'funny'
+          linkUrl: 'shop/funny'
         },
         {
           title: 'Cute',
