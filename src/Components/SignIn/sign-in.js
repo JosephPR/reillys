@@ -7,11 +7,11 @@ import { signInWithGoogle } from '../../Firebase/firebase.utils';
 
 
 export default class SignIn extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
       this.state= {
         email: "",
-        password:''
+        password:""
       }
   }
 
@@ -34,6 +34,7 @@ export default class SignIn extends Component {
         <h2>I already have an account</h2>
         <span>Sign in with your email and password</span>
 
+
         <form onSubmit={this.handleSubmit}>
         <FormInput
          name="email"
@@ -43,9 +44,9 @@ export default class SignIn extends Component {
          label="email"
          required />
         <FormInput
-         name="email"
+         name="password"
          type= "password"
-         value={this.state.email}
+         value={this.state.password}
          handleChange={this.handleChange}
          label="password"
          required />
