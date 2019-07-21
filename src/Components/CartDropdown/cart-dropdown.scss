@@ -11,6 +11,15 @@
   right: 40px;
   z-index: 5;
 
+  .empty-message {
+    font-size: 18px;
+    margin: 60px auto;
+  }
+
+  .delay-message {
+  transition-delay: 2s;
+  }
+
   .cart-items {
     height: 240px;
     display: flex;
