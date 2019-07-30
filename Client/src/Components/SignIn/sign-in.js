@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import FormInput from '../FormInput/form-input'
-import CustomButton from '../CustomButton/custom-button'
-import './sign-in.scss'
-import { auth, signInWithGoogle } from '../../Firebase/firebase.utils';
+import React, { Component } from "react";
+import FormInput from "../FormInput/form-input"
+import CustomButton from "../CustomButton/custom-button"
+import "./sign-in.scss"
+import { auth, signInWithGoogle } from "../../Firebase/firebase.utils";
 
 
 
@@ -56,7 +56,7 @@ export default class SignIn extends Component {
          handleChange={this.handleChange}
          label="password"
          required />
-       <div className='buttons'>
+       <div className="buttons">
          <CustomButton type="submit"> SIGN IN </CustomButton>
          <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
             Google Sign In

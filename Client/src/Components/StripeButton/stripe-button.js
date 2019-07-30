@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import StripeCheckout from 'react-stripe-checkout';
-import axios from 'axios';
+import StripeCheckout from "react-stripe-checkout";
+import axios from "axios";
 
 
 const StripeCheckoutButton =({ price }) => {
   const priceForStripe = price * 100;
-  const publishableKey = 'pk_test_U0RqbQZwbK8ypyJ0mqMhnlBj00hccTGwfn'
+  const publishableKey = "pk_test_U0RqbQZwbK8ypyJ0mqMhnlBj00hccTGwfn"
 
   const onToken = token => {
     axios({

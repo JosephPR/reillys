@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 
-import FormInput from '../../Components/FormInput/form-input'
-import CustomButton from '../../Components/CustomButton/custom-button'
-import './contact.scss'
+import FormInput from "../../Components/FormInput/form-input"
+import CustomButton from "../../Components/CustomButton/custom-button"
+import "./contact.scss"
 
 
   export default class ContactPage extends Component {
@@ -33,34 +33,34 @@ import './contact.scss'
   render() {
     const { displayName, email, comments } = this.state;
     return (
-      <div className='email-me'>
-        <h2 className='title'>Send me an email</h2>
-          <form className='sign-up-form' onSubmit={this.handleSubmit}>
+      <div className="email-me">
+        <h2 className="title">Send me an email</h2>
+          <form className="sign-up-form" onSubmit={this.handleSubmit}>
             <FormInput
-            type='text'
-            name='displayName'
+            type="text"
+            name="displayName"
             value={displayName}
             onChange={this.handleChange}
-            label='Name'
+            label="Name"
             required
             />
             <FormInput
-            type='email'
-            name='email'
+            type="email"
+            name="email"
             value={email}
             onChange={this.handleChange}
-            label='Email'
+            label="Email"
             required
             />
             <FormInput
-            type='Comments'
-            name='comments'
+            type="Comments"
+            name="comments"
             value={comments}
             onChange={this.handleChange}
-            label='Comments'
+            label="Comments"
             required
             />
-            <CustomButton type='submit'>Send</CustomButton>
+          <CustomButton type="submit">Send</CustomButton>
           </form>
           <img className="bear" src="https://media1.tenor.com/images/302ee4ff4601668de404cf7aae60ffd7/tenor.gif?itemid=14560309" alt="gif"/>
       </div>

@@ -1,14 +1,14 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import CollectionPreview from '../CollectionPreview/collection-preview'
-import { selectCollectionsForPreview } from '../../Redux/Shop/shop.selectors';
+import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import CollectionPreview from "../CollectionPreview/collection-preview"
+import { selectCollectionsForPreview } from "../../Redux/Shop/shop.selectors";
 
 
-import './collections-overview.scss'
+import "./collections-overview.scss"
 
 const CollectionsOverview = ({ collections }) => (
-  <div className='collections-overview'>
+  <div className="collections-overview">
   {
     collections.map(({id, ...otherCollectionProps}) => {
       return (

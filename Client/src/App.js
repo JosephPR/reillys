@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import React, { Component } from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import HomePage from './Pages/Homepage/homepage';
-import ShopPage from './Pages/Shop/shop';
-import ContactPage from './Pages/Contact/contact'
-import SignInAndSignUpPage from './Pages/SignInSignUp/sign-in-and-sign-up';
-import CheckoutPage from './Pages/Checkout/checkout';
-import Header from './Components/Header/header';
-import { auth, createUserProfileDocument } from './Firebase/firebase.utils';
-import { setCurrentUser } from './Redux/User/user.actions';
-import { selectCurrentUser } from './Redux/User/user.selectors';
+import HomePage from "./Pages/Homepage/homepage";
+import ShopPage from "./Pages/Shop/shop";
+import ContactPage from "./Pages/Contact/contact"
+import SignInAndSignUpPage from "./Pages/SignInSignUp/sign-in-and-sign-up";
+import CheckoutPage from "./Pages/Checkout/checkout";
+import Header from "./Components/Header/header";
+import { auth, createUserProfileDocument } from "./Firebase/firebase.utils";
+import { setCurrentUser } from "./Redux/User/user.actions";
+import { selectCurrentUser } from "./Redux/User/user.selectors";
 
-import './App.css';
+import "./App.css";
 
 
 
