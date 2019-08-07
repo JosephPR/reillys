@@ -1,4 +1,4 @@
-![reillys](https://media.giphy.com/media/h1u1FYGKVUVG9wWWU3/giphy.gif)
+![reillys](https://media.giphy.com/media/dZiKUEq4UoBJ2hbsWW/giphy.gif)
 
 # reillys
 e-commerce sticker application
